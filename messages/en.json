@@ -1,0 +1,17 @@
+{
+    "Header": {
+        "home": "Home",
+        "products": "Products",
+        "cart": "Cart ({count})"
+    },
+    "Cart": {
+        "cart": "Cart",
+        "empty": "Your cart is empty.",
+        "estimated_total": "Estimated Total: {total}",
+        "checkout": "Checkout",
+        "clear_cart": "Empty cart"
+    },
+    "Product": {
+        "add_to_cart": "Add to Cart"
+    }
+}
