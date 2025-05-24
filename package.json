@@ -10,20 +10,18 @@
     "codegen": "graphql-codegen --config codegen.ts"
   },
   "dependencies": {
-    "@shopify/storefront-api-client": "^1.0.7",
+    "@apollo/client": "^3.13.8",
     "clsx": "^2.1.1",
-    "graphql-tag": "^2.12.6",
+    "graphql": "^16.11.0",
     "lucide-react": "^0.511.0",
     "next": "15.3.2",
     "next-intl": "^4.1.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "slugify": "^1.6.6"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
-    "@graphql-codegen/cli": "5.0.6",
-    "@graphql-codegen/client-preset": "4.8.1",
-    "@graphql-codegen/introspection": "4.0.3",
     "@tailwindcss/postcss": "^4.1.7",
     "@types/node": "^20.17.48",
     "@types/react": "^19.1.4",

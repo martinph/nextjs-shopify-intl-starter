@@ -21,11 +21,11 @@ export default function Header() {
     }, [totalQuantity]);
 
     return (
-        <header className="fixed flex items-center w-full justify-between p-4 bg-gray-700 text-white">
+        <header className="fixed flex z-50 items-center w-full justify-between p-4 bg-gray-700 text-white">
             <h1 className="text-2xl font-bold">My E-commerce Store</h1>
             <nav className="flex space-x-4">
                 <a href="/" className="hover:text-gray-400">Home</a>
-                <a href="/products" className="hover:text-gray-400">Products</a>
+                <a href="/store" className="hover:text-gray-400">Store</a>
                 <button onClick={() => setCartOpen(!cartOpen)} className="cursor-pointer hover:text-gray-400">{t("cart", {count: formatNumber(totalQuantity, locale)})}</button>
             </nav>
             <CartDrawer isOpen={cartOpen} onClose={() => setCartOpen(false)}/>

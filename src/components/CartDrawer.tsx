@@ -2,7 +2,6 @@
 
 import { useCart } from "@/context/CartContext";
 import { useCurrency } from "@/context/CurrencyContext";
-import { cartCreate } from "@/lib/shopify";
 import { formatPrice } from "@/lib/utils";
 import clsx from "clsx";
 import { XIcon } from "lucide-react";
@@ -27,14 +26,10 @@ export default function CartDrawer({position = "right", className, isOpen, onClo
 
     const handleCheckout = async () => {
         setLoading(true);
-        const { data: cartData } = await cartCreate<any>({
-            lines: items.map((item) => ({
-                quantity: item.quantity,
-                merchandiseId: item.id,
-            })),
-        });
-        clearCart();
-        window.location.href = cartData.cartCreate.cart.checkoutUrl;
+        setTimeout(() => {
+            setLoading(false);
+            clearCart();
+        }, 3000);
     };
 
     return (
